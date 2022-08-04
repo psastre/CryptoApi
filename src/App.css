@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-transform: uppercase;
 }
 
 .App-link {
@@ -35,4 +36,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+.coin-app{
+  background-image: linear-gradient(
+    90deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(269deg 100% 21%) 17%,
+    hsl(284deg 100% 23%) 32%,
+    hsl(296deg 100% 24%) 44%,
+    hsl(306deg 100% 27%) 55%,
+    hsl(313deg 100% 32%) 65%,
+    hsl(319deg 100% 37%) 73%,
+    hsl(323deg 100% 41%) 82%,
+    hsl(331deg 83% 51%) 91%,
+    hsl(337deg 100% 60%) 100%
+  );
+  width: 90%;
+  border-radius: 25px;
+  margin: auto;
+  padding: 0 25px;
+}
+.coin-text{
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-stretch: expanded;
+  color: white
+}
+
+.coin-search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 50px;
+}
+
+.coin-input{
+  width: 30vw;
+  height: 35px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border: white;
+}
+.coins-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+
+.coin-container{
+  background-color: aliceblue;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 25px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+transition: ease 0.4s;
+ 
+}
+
+.coin-container:hover{
+  transform: scale(1.05);
+  border:3px solid #7aa2f3;
+  padding: 5px;
+}
+
+.coin img{
+  width: 110px;
+  height: 110px;
 }
